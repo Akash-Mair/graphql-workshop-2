@@ -2,25 +2,17 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
 
-    enum Genre {
-        POP
-        FUNK
-        HIPHOP
-        RAP
-        ROCK
-    }
-
     type Artist {
         id: ID!
         name: String!
-        genre: Genre
+        genre: String
         songs: [Song]
     }
 
     type Song {
         id: ID!
         title: String!
-        genre: Genre
+        genre: String
         artist: Artist
     }
 
@@ -31,7 +23,7 @@ const typeDefs = gql`
 
     input NewSongInput {
         title: String!
-        genre: Genre!
+        genre: String!
         artist: ID!
     }
 
