@@ -6,6 +6,9 @@ const resolvers = {
         },
         songs: (_, __, {  Song  }) => {
             return Song.find()
+        },
+        song: (_, { input }, { Song }) => {
+            return Song.findById(input)
         }
     },
 
@@ -28,7 +31,6 @@ const resolvers = {
             return artist._id
         },
         songs: (artist, _, { Song }) => {
-            console.log(artist)
             return Song.find({artist: artist._id})
         }
     },
@@ -37,8 +39,6 @@ const resolvers = {
             return song._id
         },
         artist: (song, _, { Artist }) => {
-            console.log(song)
-
             return Artist.findById(song.artist)
         }
     }

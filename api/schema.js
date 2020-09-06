@@ -19,6 +19,7 @@ const typeDefs = gql`
     type Query {
         artists: [Artist]!
         songs: [Song]!
+        song(input: ID!): Song!
     }
 
     input NewSongInput {
