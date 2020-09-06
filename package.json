@@ -2,10 +2,10 @@
   "name": "graphql-workshop-v2",
   "version": "1.0.0",
   "description": "workshop for a server side implementation of graphql using apollo server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
