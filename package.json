@@ -1,0 +1,18 @@
+{
+  "name": "graphql-workshop-v2",
+  "version": "1.0.0",
+  "description": "workshop for a server side implementation of graphql using apollo server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.17.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.3",
+    "nodemon": "^2.0.4"
+  }
+}
