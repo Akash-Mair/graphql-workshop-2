@@ -11,11 +11,7 @@ mongoose.connect('mongodb://localhost:27017/songsgql', { useNewUrlParser: true, 
 
 const server = new ApolloServer(
     { 
-        typeDefs, 
-        resolvers, 
-        context() {
-            return { Artist, Song }
-        }
+        
     }
 )
 
